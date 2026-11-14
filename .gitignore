@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Pharmacy project data and outputs
+data/
+outputs/
+.DS_Store
