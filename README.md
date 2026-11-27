@@ -582,9 +582,11 @@ Example rows:
 Notebooks run independently.  Run them in any order.
 
 ### RQ4 : Estimation on medicaid prescription spending by CA Zip code.
-Methodology = CA statewide medicaid reimbursement form SDUD
+
 
 ```text
+Methodology = CA statewide medicaid reimbursement form SDUD
+
 Get Medi-cal eligible patients by CA zip code from DHCS
 
 Calculate share of zip eligible population / total CA population
