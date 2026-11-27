@@ -552,26 +552,30 @@ Example rows:
 | 12/8 – 12/14 | Check unique NPI counts, primary specialty, prescriber definition, and NPPES date | QA findings for report |
 | 12/15 – 12/16 | Finalize provider and specialty counts; check consistency with RQ6 | Final RQ3 and provider side of RQ6 file |
 
+
 ## Repo Structure
+
+```text
 .
 ├── notebooks
-│   ├── rq1
-│   │   └── notes.txt
-│   ├── rq2
-│   │   └── notes.txt
-│   ├── rq3
-│   │   └── notes.txt
-│   ├── rq4
-│   │   ├── mary_d5_sdud.ipynb
-│   │   ├── mary_d6_mdrp.ipynb
-│   │   ├── mary_r7_dhcs.ipynb
-│   │   └── mary_rq4_analysis.ipynb
-│   ├── rq5
-│   │   └── notes.txt
-│   └── rq6
-│       └── notes.txt
+│   ├── rq1
+│   │   └── notes.txt
+│   ├── rq2
+│   │   └── notes.txt
+│   ├── rq3
+│   │   └── notes.txt
+│   ├── rq4
+│   │   ├── mary_d5_sdud.ipynb
+│   │   ├── mary_d6_mdrp.ipynb
+│   │   ├── mary_r7_dhcs.ipynb
+│   │   └── mary_rq4_analysis.ipynb
+│   ├── rq5
+│   │   └── notes.txt
+│   └── rq6
+│       └── notes.txt
 ├── README.md
 └── requirements.txt
+```
 
 ## Notes on the notebooks
 
