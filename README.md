@@ -237,19 +237,11 @@ Hersh Rudrawal
 
 Narayan Poudel
 
-| :---- | :---- | ----- |
-| **Week ( 11 / 6 \- 11 / 9 )** | Locate NPPES and NUCC 2024 taxonomy.  Understand primary taxonomy and CA ZIP for practices.  Raw NPPES/NUCC fields check. Row counts.   |  |
-|  |  |  |
-|   |  |  |
-| **Week (11 / 10 \- 11 / 16\)** |  NPPES filter for CA and individual providers.  Primary taxonomy  Normalize ZIP and NPI Clean NUCC specialty codes.  Clean provider and taxonomy RDD   |  |
-|   |  |  |
-| **Week (11 / 17 \- 11 / 23\)** |  Join NPPES with NUCC on primary taxonomy code.  Double check one row per NPI and get provider counts for hand out to Hersh.  Provider and specialty RDD Join validation check   |  |
-|  |  |  |
-| **Week (11 / 24 \- 11 / 30\)** | Calculate unique/distinct prescribers per Zip per specialty and CA.  Check the calculation for the denominator RQ6.  Completed RQ3, provider counts check.  |  |
-|  |  |  |
-| **Week (12 / 1 \- 12 / 7\)** |  Prepare provider distribution charts, cross check with RQ 6 provider counts.  RQ3 visualization ready provider table.   |  |
-|  |  |  |
-| **Week (12 / 8 \- 12 / 14\)** |  Check unique NPI counts, primary specialty, prescriber definition and NPPES date.  Write QA findings for report.   |  |
-|  |  |  |
-| **Week (12 / 15 \- 12 / 16\)** |  Finalize provider and specialty counts. Check for consistency with RQ6.  Final RQ3 and provider side of RQ6 file.   |  |
-|  |  |  |
+| Week | Item  |  
+| **Week ( 11 / 6 \- 11 / 9 )** | Locate NPPES and NUCC 2024 taxonomy.  Understand primary taxonomy and CA ZIP for practices.  Raw NPPES/NUCC fields check. Row counts.   |  
+| **Week (11 / 10 \- 11 / 16\)** |  NPPES filter for CA and individual providers.  Primary taxonomy  Normalize ZIP and NPI Clean NUCC specialty codes.  Clean provider and taxonomy RDD   |
+| **Week (11 / 17 \- 11 / 23\)** |  Join NPPES with NUCC on primary taxonomy code.  Double check one row per NPI and get provider counts for hand out to Hersh.  Provider and specialty RDD Join validation check   | 
+| **Week (11 / 24 \- 11 / 30\)** | Calculate unique/distinct prescribers per Zip per specialty and CA.  Check the calculation for the denominator RQ6.  Completed RQ3, provider counts check.  | 
+| **Week (12 / 1 \- 12 / 7\)** |  Prepare provider distribution charts, cross check with RQ 6 provider counts.  RQ3 visualization ready provider table.     |
+| **Week (12 / 8 \- 12 / 14\)** |  Check unique NPI counts, primary specialty, prescriber definition and NPPES date.  Write QA findings for report.   |  
+| **Week (12 / 15 \- 12 / 16\)** |  Finalize provider and specialty counts. Check for consistency with RQ6.  Final RQ3 and provider side of RQ6 file.   |  
