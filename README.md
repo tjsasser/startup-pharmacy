@@ -105,7 +105,6 @@ Requirements : At least one dataset must be \>= 2GB and/or \>= 1M records.
 | 8 | U.S Census ACS 2024 link  [https\://www\.census.gov/data/developers/data-sets/acs-5year.html?](https://www.census.gov/data/developers/data-sets/acs-5year.html?) | CSV | Verify | 4 |
 | 9 | CA DMHC Prescription Drug Transparency Report 2024 Link  [https\://www\.dmhc.ca.gov/Portals/0/Docs/DO/SB172024Report.pdf?](https://www.dmhc.ca.gov/Portals/0/Docs/DO/SB172024Report.pdf?utm_source=chatgpt.com) | PDF  | Verify | 4 |
 
-#### ![][image1]**![][image2]**
 
 #### 
 
@@ -154,36 +153,6 @@ Requirements : At least one dataset must be \>= 2GB and/or \>= 1M records.
 
 Here is the data schema with examples for each of the eight data sources we are including in this project.  Note that rows and columns are listed on the top left of each spreadsheet tab.
 
-**File Summary:**  
-![][image3]  
-**MDRP:**  
-![][image4]
-
-**Pharmacy Counts:**  
-![][image5]  
-**NUCC Health Care Provider Codes:**  
-![][image6]
-
-**Medi-Cal Certified Eligibles:**  
-![][image7]
-
-**CMS State Drug Utilization:**  
-![][image8]
-
-**Medicare Part D Prescribers:**  
-![][image9]
-
-**NPPES Data Dissemination:**  
-![][image10]
-
-**NPPES Data Dissemination, Secondary Practice Locations:**  
-![][image11]
-
-**NPPES Electronic Endpoints:**  
-![][image12]
-
-**NPPES Other Organization Names:**  
-![][image13]
 
 |  Start-up Pharmacy Location Guide |  |
 | :---- | ----- |
