@@ -552,3 +552,12 @@ Example rows:
 | 12/8 – 12/14 | Check unique NPI counts, primary specialty, prescriber definition, and NPPES date | QA findings for report |
 | 12/15 – 12/16 | Finalize provider and specialty counts; check consistency with RQ6 | Final RQ3 and provider side of RQ6 file |
 
+## Repo Structure
+# TBD
+
+Repo structure - For each .ipynb - make sure to include to add what each file is
+about and the sequence to run (Ex. 01_create_weather_crime_rdds.ipynb,
+02_join_write_weather_crime_rdds.ipynb)
+
+## requirements.txt
+# TBD
