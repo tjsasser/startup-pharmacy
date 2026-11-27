@@ -5,13 +5,9 @@
 |  PROJECT ROADMAP   |  |
 | Point of contact  →  [Mary Kim](mailto:marykimsfo@gmail.com)  USF MS DSAI / (510) 421-9673 Email : Mkim106@usfca.edu |  |
 
-|  Start-up Pharmacy Location Guide |  |
-| :---- | ----- |
+# Start-up Pharmacy Location Guide
 
-| 01 |
-| :---- |
-
-### **Introduction**
+## **Introduction**
 
 #### Purpose
 
@@ -51,9 +47,6 @@ Jonah Robinson
 Hersh Rudrawal  
 Thomas Sasser 
 
-|  02 |  |  |
-| :---- | ----- | ----- |
-
 ### **Objectives**
 
 #### Analysis goals 
@@ -77,11 +70,6 @@ Thomas Sasser
    Business purpose : Understand market opportunity  
    Output : Rxers to pharmacy ratio. 
 
-|  Start-up Pharmacy Location Guide |  |
-| :---- | ----- |
-
-| 03 |
-| :---- |
 
 ### **Data** 
 
@@ -148,17 +136,10 @@ Requirements : At least one dataset must be \>= 2GB and/or \>= 1M records.
 | 5 : Number of active pharmacies  | D4 : CA DCA licensing   | filter() map() reduceByKey() distinct() |
 | 6 : Prescriber to pharmacy ratio | Aggregated D1 \+ aggregated D4  Join on ZIP5 1:1  Ratio \= prescribers / pharmacies    | map() fullOuterJoin() mapValues() |
 
-|  Start-up Pharmacy Location Guide |  |
-| :---- | ----- |
 
 Here is the data schema with examples for each of the eight data sources we are including in this project.  Note that rows and columns are listed on the top left of each spreadsheet tab.
 
 
-|  Start-up Pharmacy Location Guide |  |
-| :---- | ----- |
-
-| 05 |
-| :---- |
 
 ### **Team Plan** 
 
