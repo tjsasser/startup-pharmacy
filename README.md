@@ -553,11 +553,34 @@ Example rows:
 | 12/15 – 12/16 | Finalize provider and specialty counts; check consistency with RQ6 | Final RQ3 and provider side of RQ6 file |
 
 ## Repo Structure
-# TBD
+.
+├── notebooks
+│   ├── rq1
+│   │   └── notes.txt
+│   ├── rq2
+│   │   └── notes.txt
+│   ├── rq3
+│   │   └── notes.txt
+│   ├── rq4
+│   │   ├── mary_d5_sdud.ipynb
+│   │   ├── mary_d6_mdrp.ipynb
+│   │   ├── mary_r7_dhcs.ipynb
+│   │   └── mary_rq4_analysis.ipynb
+│   ├── rq5
+│   │   └── notes.txt
+│   └── rq6
+│       └── notes.txt
+├── README.md
+└── requirements.txt
 
-Repo structure - For each .ipynb - make sure to include to add what each file is
-about and the sequence to run (Ex. 01_create_weather_crime_rdds.ipynb,
-02_join_write_weather_crime_rdds.ipynb)
+## Notes on the notebooks
 
-## requirements.txt
-# TBD
+Notebooks run independently.  Run them in any order.
+
+### RQ4 : Estimation on medicaid prescription spending by CA Zip code.
+Methodology = CA statewide medicaid reimbursement form SDUD
+Get Medi-cal eligible patients by CA zip code from DHCS
+Calculate share of zip eligible population / total CA population
+share * statewide medicaid spending.
+Keeping the suppressed data since they are not $0.
+
