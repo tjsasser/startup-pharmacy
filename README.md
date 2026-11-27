@@ -237,7 +237,6 @@ Hersh Rudrawal
 
 Narayan Poudel
 
-|  |  |  |
 | :---- | :---- | ----- |
 | **Week ( 11 / 6 \- 11 / 9 )** | Locate NPPES and NUCC 2024 taxonomy.  Understand primary taxonomy and CA ZIP for practices.  Raw NPPES/NUCC fields check. Row counts.   |  |
 |  |  |  |
