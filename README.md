@@ -156,92 +156,64 @@ Friday : 2-3pm in person at 101 Howard.
 |  | Narayan Poudel |  | Q3 , Q6 |  |   |
 
 
-| Mary Kim |  |  |
-| :---- | :---- | ----- |
-|  |  |  |
-| **Week ( 11 / 6 \- 11 / 9 )** | Locate and retrieve CMS SDUD 2024 DHCS Medi-Cal eligible counts. D6 Drug products.   Raw Medicaid files, Counts, log, Schema   |  |
-|  |  |  |
-|   |  |  |
-| **Week (11 / 10 \- 11 / 16\)** |  SDUD / DHCS load with RDDs.  Filter CA, 2024 Normalize ZIP Extract reimbursement, eligibility values Suppression Medicaid and eligibility RDD  |  |
-|   |  |  |
-| **Week (11 / 17 \- 11 / 23\)** |  One statewide medicaid spending and ZIP eligibility weights.  Join SDUD \+ D6 NDC/year/quarter.  Medicaid spending, eligibility weights, NDC join.   |  |
-|  |  |  |
-| **Week (11 / 24 \- 11 / 30\)** | Medicaid 2024 spending calculation Allocation by ZIP \+ medicaid shares. Medicaid spending estimates calculation by ZIP   |  |
-|  |  |  |
-| **Week (12 / 1 \- 12 / 7\)** |  Validation on medicaid spending estimates and geo distribution.  Notes on limitation and methodology.  Medicaid charts and findings.   |  |
-|  |  |  |
-| **Week (12 / 8 \- 12 / 14\)** |  Write methodology on calculation, suppression strategy, eligibility allocation.  Write report.   |  |
-|  |  |  |
-| **Week (12 / 15 \- 12 / 16\)** |  Rerun the results and finalize methodology and limitations.  Final Medicaid RQ4.   |  |
+# Team Schedule
 
-| Thomas Sasser |  |  |
-|  |  |  |
-|  |  |  |
-| **Week ( 11 / 6 \- 11 / 9 )** | Locate 2024 DMHC prescription drug report Locate Census ACS 2024 report for private insurance data. Eligible commerical spending measures.   Commercial notes, ACS fields.   |  |
-|  |  |  |
-|   |  |  |
-| **Week (11 / 10 \- 11 / 16\)** |  DHMC commercial spending and  Privately insured population by ZCTA with ACS data.   Commercial and cleaned population RDD  |  |
-|   |  |  |
-| **Week (11 / 17 \- 11 / 23\)** |  Commercial spending amount \+ ZIP/ZCTA insurance weights Coverage and geo match verification Commercial allocation calculation validation and QA report.   |  |
-|  |  |  |
-| **Week (11 / 24 \- 11 / 30\)** | Calculate commercial ZIP spending estimates per the formula.  Combine Med D, Medicaid, and commercial results with RDD joins.  RQ4 three \- payer table for spending.   |  |
-|  |  |  |
-| **Week (12 / 1 \- 12 / 7\)** |  Combine all ZIP level RDD outputs and generate ZIP selector, spending chart and comparison tables.  Interactive dashboard  |  |
-|  |  |  |
-| **Week (12 / 8 \- 12 / 14\)** |  Validate commercial methodology with Mary. Compile report. Report draft.   |  |
-|  |  |  |
-| **Week (12 / 15 \- 12 / 16\)** |  Repo check and report submission Final report and QA.   |  |
-|  |  |  |
-|  |  |  |
+## Mary Kim
 
-| Jonah Robinson |  |  |
-| :---- | ----- | ----- |
+| Week | Tasks | Deliverables |
+| :--- | :--- | :--- |
+| 11/6 – 11/9 | Locate and retrieve CMS SDUD 2024 and DHCS Medi-Cal eligible counts; D6 drug products | Raw Medicaid files, counts, log, schema |
+| 11/10 – 11/16 | Load SDUD/DHCS with RDDs; filter CA, 2024; normalize ZIP; extract reimbursement and eligibility values; suppression | Medicaid and eligibility RDD |
+| 11/17 – 11/23 | One statewide Medicaid spending and ZIP eligibility weights; join SDUD + D6 on NDC/year/quarter | Medicaid spending, eligibility weights, NDC join |
+| 11/24 – 11/30 | Medicaid 2024 spending calculation; allocation by ZIP + Medicaid shares | Medicaid spending estimates by ZIP |
+| 12/1 – 12/7 | Validate Medicaid spending estimates and geo distribution; notes on limitations and methodology | Medicaid charts and findings |
+| 12/8 – 12/14 | Write methodology on calculation, suppression strategy, and eligibility allocation | Report write-up |
+| 12/15 – 12/16 | Rerun results; finalize methodology and limitations | Final Medicaid RQ4 |
 
-|  |  |  |
-| :---- | :---- | ----- |
-| **Week ( 11 / 6 \- 11 / 9 )** | Locate Medicare Part D by Provider(2024) Locate CA DCA pharmacy license data Verify brand spending, generics spending columns Verify license category  Raw Medicare Part D Raw DCA file  Column and size   |  |
-|  |  |  |
-|   |  |  |
-| **Week (11 / 10 \- 11 / 16\)** |  Clean Part D Bx/Gx spending Clean DCA file Filter CA, active licensed pharmacy, Zip code  Cleaned Part D spending and pharmacies  |  |
-|   |  |  |
-| **Week (11 / 17 \- 11 / 23\)** |  Aggregate Med D brand/generic spending.  Count pharmacy by ZIP. Unique pharmacies  RQ1 spending amount RDD  RQ5 pharmacy counts RDD   |  |
-|  |  |  |
-| **Week (11 / 24 \- 11 / 30\)** | Calculate Bx/Gx spending % Annual total drug costs Unique active pharmacy counts by ZIP  Completed RQ1, RQ5 metrics. Medicare Spending for RQ 4\. Hand out Medicare Spending to Tom.   |  |
-|  |  |  |
-| **Week (12 / 1 \- 12 / 7\)** |  Bx/Gx charts Pharmacy counts,  Medicare spending results for dashboard usage later.  RQ1, RQ5 final usage ready files.   |  |
-|  |  |  |
-| **Week (12 / 8 \- 12 / 14\)** |  Bx/Gx drug costs against Part D totals Double check active pharmacy counts and license filters.  RQ1, RQ5 report findings.   |  |
-|  |  |  |
-| **Week (12 / 15 \- 12 / 16\)** |  Finalize Bx/Gx spending.  Medicare spending Active pharmacies.  RQ1, RQ5 and Med D for RQ4 files.    |  |
-|  |  |  |
+## Thomas Sasser
 
-Hersh Rudrawal
+| Week | Tasks | Deliverables |
+| :--- | :--- | :--- |
+| 11/6 – 11/9 | Locate 2024 DMHC prescription drug report; locate Census ACS 2024 for private insurance data; identify eligible commercial spending measures | Commercial notes, ACS fields |
+| 11/10 – 11/16 | DMHC commercial spending; privately insured population by ZCTA with ACS data | Commercial and cleaned population RDD |
+| 11/17 – 11/23 | Commercial spending amount + ZIP/ZCTA insurance weights; coverage and geo match verification | Commercial allocation calculation validation and QA report |
+| 11/24 – 11/30 | Calculate commercial ZIP spending estimates per the formula; combine Med D, Medicaid, and commercial results with RDD joins | RQ4 three-payer spending table |
+| 12/1 – 12/7 | Combine all ZIP-level RDD outputs; generate ZIP selector, spending chart, and comparison tables | Interactive dashboard |
+| 12/8 – 12/14 | Validate commercial methodology with Mary; compile report | Report draft |
+| 12/15 – 12/16 | Repo check and report submission | Final report and QA |
 
-|  |  |  |
-| :---- | :---- | ----- |
-| **Week ( 11 / 6 \- 11 / 9 )** | Explore Med D tot\_clms, Tot\_30day\_Fills, NPI, and ZIP.  Rx volume check, RDD plan.    |  |
-|  |  |  |
-|   |  |  |
-| **Week (11 / 10 \- 11 / 16\)** |  Clean prescription claims, 30 days fills,  NPI and ZIP codes From Med D. Cleaned prescription volume RDD  |  |
-|   |  |  |
-| **Week (11 / 17 \- 11 / 23\)** |  Join Part D rx records with provider specialty RDD using NPI (from Narayan) NPI join RDD, handle unmatched NPI   |  |
-|  |  |  |
-| **Week (11 / 24 \- 11 / 30\)** | Calculate annual Rxs claims, Monthly, 30 days fills, and Average rx ratio to provider.  Combine prescribers and pharmacy ZIP counts for RQ6.  RQ2 prescription volume. RQ6 ratio   |  |
-|  |  |  |
-| **Week (12 / 1 \- 12 / 7\)** |  Prepare annual/monthly volume for visualization.  Double check prescribers to pharmacy ratio.  RQ2, RQ6 dashboard ready output.  |  |
-|  |  |  |
-| **Week (12 / 8 \- 12 / 14\)** |  Reconcile total annual claims \+ fills.  Check RQ 6 zero- pharmacy and joins.  RQ2, RQ6 validation and report.  |  |
-|  |  |  |
-| **Week (12 / 15 \- 12 / 16\)** |  Calculator for rx volumes and prescribers to pharmacy ratio.  Final RQ2, RQ6 files.   |  |
-|   |  |  |
+## Jonah Robinson
 
-Narayan Poudel
+| Week | Tasks | Deliverables |
+| :--- | :--- | :--- |
+| 11/6 – 11/9 | Locate Medicare Part D by Provider (2024); locate CA DCA pharmacy license data; verify brand and generic spending columns; verify license category | Raw Medicare Part D, raw DCA file, column and size check |
+| 11/10 – 11/16 | Clean Part D Bx/Gx spending; clean DCA file; filter CA, active licensed pharmacies, ZIP code | Cleaned Part D spending and pharmacies |
+| 11/17 – 11/23 | Aggregate Med D brand/generic spending; count unique pharmacies by ZIP | RQ1 spending amount RDD; RQ5 pharmacy counts RDD |
+| 11/24 – 11/30 | Calculate Bx/Gx spending %, annual total drug costs, and unique active pharmacy counts by ZIP | Completed RQ1, RQ5 metrics; Medicare spending for RQ4 (hand off to Tom) |
+| 12/1 – 12/7 | Bx/Gx charts; pharmacy counts; Medicare spending results for later dashboard use | RQ1, RQ5 final usage-ready files |
+| 12/8 – 12/14 | Compare Bx/Gx drug costs against Part D totals; double-check active pharmacy counts and license filters | RQ1, RQ5 report findings |
+| 12/15 – 12/16 | Finalize Bx/Gx spending, Medicare spending, and active pharmacies | RQ1, RQ5, and Med D for RQ4 files |
 
-| Week | Item  |  
-| **Week ( 11 / 6 \- 11 / 9 )** | Locate NPPES and NUCC 2024 taxonomy.  Understand primary taxonomy and CA ZIP for practices.  Raw NPPES/NUCC fields check. Row counts.   |  
-| **Week (11 / 10 \- 11 / 16\)** |  NPPES filter for CA and individual providers.  Primary taxonomy  Normalize ZIP and NPI Clean NUCC specialty codes.  Clean provider and taxonomy RDD   |
-| **Week (11 / 17 \- 11 / 23\)** |  Join NPPES with NUCC on primary taxonomy code.  Double check one row per NPI and get provider counts for hand out to Hersh.  Provider and specialty RDD Join validation check   | 
-| **Week (11 / 24 \- 11 / 30\)** | Calculate unique/distinct prescribers per Zip per specialty and CA.  Check the calculation for the denominator RQ6.  Completed RQ3, provider counts check.  | 
-| **Week (12 / 1 \- 12 / 7\)** |  Prepare provider distribution charts, cross check with RQ 6 provider counts.  RQ3 visualization ready provider table.     |
-| **Week (12 / 8 \- 12 / 14\)** |  Check unique NPI counts, primary specialty, prescriber definition and NPPES date.  Write QA findings for report.   |  
-| **Week (12 / 15 \- 12 / 16\)** |  Finalize provider and specialty counts. Check for consistency with RQ6.  Final RQ3 and provider side of RQ6 file.   |  
+## Hersh Rudrawal
+
+| Week | Tasks | Deliverables |
+| :--- | :--- | :--- |
+| 11/6 – 11/9 | Explore Med D `Tot_Clms`, `Tot_30day_Fills`, NPI, and ZIP | Rx volume check, RDD plan |
+| 11/10 – 11/16 | Clean prescription claims, 30-day fills, NPI, and ZIP codes from Med D | Cleaned prescription volume RDD |
+| 11/17 – 11/23 | Join Part D Rx records with provider specialty RDD using NPI (from Narayan); handle unmatched NPIs | NPI join RDD |
+| 11/24 – 11/30 | Calculate annual Rx claims, monthly claims, 30-day fills, and average Rx-to-provider ratio; combine prescriber and pharmacy ZIP counts for RQ6 | RQ2 prescription volume; RQ6 ratio |
+| 12/1 – 12/7 | Prepare annual/monthly volume for visualization; double-check prescriber-to-pharmacy ratio | RQ2, RQ6 dashboard-ready output |
+| 12/8 – 12/14 | Reconcile total annual claims + fills; check RQ6 zero-pharmacy ZIPs and joins | RQ2, RQ6 validation and report |
+| 12/15 – 12/16 | Calculator for Rx volumes and prescriber-to-pharmacy ratio | Final RQ2, RQ6 files |
+
+## Narayan Poudel
+
+| Week | Tasks | Deliverables |
+| :--- | :--- | :--- |
+| 11/6 – 11/9 | Locate NPPES and NUCC 2024 taxonomy; understand primary taxonomy and CA ZIP for practices | Raw NPPES/NUCC fields check, row counts |
+| 11/10 – 11/16 | Filter NPPES for CA and individual providers; primary taxonomy; normalize ZIP and NPI; clean NUCC specialty codes | Clean provider and taxonomy RDD |
+| 11/17 – 11/23 | Join NPPES with NUCC on primary taxonomy code; double-check one row per NPI; get provider counts to hand off to Hersh | Provider and specialty RDD; join validation check |
+| 11/24 – 11/30 | Calculate unique prescribers per ZIP, per specialty, and for CA; check the RQ6 denominator calculation | Completed RQ3, provider counts check |
+| 12/1 – 12/7 | Prepare provider distribution charts; cross-check with RQ6 provider counts | RQ3 visualization-ready provider table |
+| 12/8 – 12/14 | Check unique NPI counts, primary specialty, prescriber definition, and NPPES date | QA findings for report |
+| 12/15 – 12/16 | Finalize provider and specialty counts; check consistency with RQ6 | Final RQ3 and provider side of RQ6 file |
