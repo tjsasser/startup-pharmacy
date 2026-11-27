@@ -155,13 +155,6 @@ Friday : 2-3pm in person at 101 Howard.
 |  | Hersh Rudrawal |  | Q2 , Q6 |  |  |
 |  | Narayan Poudel |  | Q3 , Q6 |  |   |
 
-|  Start-up Pharmacy Location Guide |  |
-| :---- | ----- |
-
-| 06 |
-| :---- |
-
-# 
 
 | Mary Kim |  |  |
 | :---- | :---- | ----- |
@@ -180,6 +173,7 @@ Friday : 2-3pm in person at 101 Howard.
 | **Week (12 / 8 \- 12 / 14\)** |  Write methodology on calculation, suppression strategy, eligibility allocation.  Write report.   |  |
 |  |  |  |
 | **Week (12 / 15 \- 12 / 16\)** |  Rerun the results and finalize methodology and limitations.  Final Medicaid RQ4.   |  |
+
 | Thomas Sasser |  |  |
 |  |  |  |
 |  |  |  |
