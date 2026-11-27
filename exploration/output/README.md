@@ -4,8 +4,6 @@
 
 Generated Nov 23, 2026.
 
-> **Draft.** Column names are not final; they depend on the layout Thomas needs for the dashboard (decision 13). Tell HR before building against them.
-
 ## Data
 
 The number of Medicare Part D prescription claims written in 2024 by prescribers whose practice address is in each ZIP code.
