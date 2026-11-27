@@ -8,6 +8,18 @@
 
 ---
 
+## Team Members
+
+**USF MS DSAI Cohort 15**
+
+- Mary Kim
+- Narayan Poudel
+- Jonah Robinson
+- Hersh Rudrawal
+- Thomas Sasser
+
+---
+
 ## Introduction
 
 ### Purpose
@@ -45,16 +57,6 @@ California only, 2024 datasets, brand-name and generic drugs only.
 - Commercial estimates
 - Pharmacy counts
 - ZIP-level analysis
-
-### Contributors
-
-**USF MS DSAI Cohort 15**
-
-- Mary Kim
-- Narayan Poudel
-- Jonah Robinson
-- Hersh Rudrawal
-- Thomas Sasser
 
 ---
 
@@ -549,3 +551,4 @@ Example rows:
 | 12/1 – 12/7 | Prepare provider distribution charts; cross-check with RQ6 provider counts | RQ3 visualization-ready provider table |
 | 12/8 – 12/14 | Check unique NPI counts, primary specialty, prescriber definition, and NPPES date | QA findings for report |
 | 12/15 – 12/16 | Finalize provider and specialty counts; check consistency with RQ6 | Final RQ3 and provider side of RQ6 file |
+
