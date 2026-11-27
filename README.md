@@ -1,164 +1,145 @@
+# Start-up Pharmacy Location Guide — Project Roadmap
 
-
-| Created  →  Nov 3, 2026  | Last update  →  Nov 7, 2026 |
+| Created | Last update |
 | :---: | :---: |
-|  PROJECT ROADMAP   |  |
-| Point of contact  →  [Mary Kim](mailto:marykimsfo@gmail.com)  USF MS DSAI / (510) 421-9673 Email : Mkim106@usfca.edu |  |
+| Nov 3, 2026 | Nov 7, 2026 |
 
-# Start-up Pharmacy Location Guide
+**Point of contact:** [Mary Kim](mailto:marykimsfo@gmail.com) — USF MS DSAI · (510) 421-9673 · Mkim106@usfca.edu
 
-## **Introduction**
+---
 
-#### Purpose
+## Introduction
 
-A Start-up Pharmacy Location Guide : Identifying Independent Pharmacy Business Opportunity in California using Pyspark, distributed computing.
+### Purpose
 
-#### Importance
+A Start-up Pharmacy Location Guide: identifying independent pharmacy business opportunities in California using PySpark and distributed computing.
 
-We, USF MS DSAI Cohort 15 students, decided to develop a data-driven location guide that helps potential independent pharmacy owners make informed business decisions on opening a new business or expansion of their business in California. 
+### Importance
 
-Over the course of years, the role of community pharmacies have shifted tremendously. Its scope is beyond traditional prescription dispensing. Pharmacies now provide essential services such as immunization, medication therapy management, diabetes care and medication adherence consultation as a frontline healthcare provider. Independent pharmacies in particular, play a very important role in their communities by offering personalized care and providing specific needs to their patients. 
+We, USF MS DSAI Cohort 15 students, are developing a data-driven location guide to help prospective independent pharmacy owners make informed decisions about opening a new pharmacy or expanding an existing business in California.
 
-Unfortunately, compared to established national chain pharmacies, independent pharmacy owners often have limited access to resources and comprehensive market information. It challenges their business decision making when they evaluate their potential business location, understand prescription demand in the area, identify provider opportunity and assess competition. 
+Over the years, the role of community pharmacies has shifted tremendously, extending well beyond traditional prescription dispensing. As frontline healthcare providers, pharmacies now offer essential services such as immunizations, medication therapy management, diabetes care, and medication adherence consultations. Independent pharmacies in particular play an important role in their communities by offering personalized care and meeting their patients' specific needs.
 
-To address these challenges, our project focuses on incorporating public healthcare datasets to provide meaningful insights into local pharmacy market opportunities. Using Pyspark, we decided to analyze prescriber distribution and their specialties, Medicare prescription volume, Brands versus generics drug spending, demographic information to estimate private / commercial insurance market, Medicaid prescription utilization for drug demand and spending across California ZIP codes as well as pharmacy competition information. 
+Unfortunately, compared to established national chains, independent pharmacy owners often have limited access to resources and comprehensive market information. This makes it harder to evaluate a potential location, understand prescription demand in the area, identify prescriber opportunities, and assess competition.
 
-We aim to provide the factors that influence pharmacy business growth, to reduce uncertainty in the location selection process by making large-scale healthcare market information accessible to independent pharmacy owners. This project is planned to establish a foundation for future modeling to further support pharmacy location and business expansion decisions. 
+To address these challenges, our project combines public healthcare datasets to provide meaningful insight into local pharmacy market opportunities. Using PySpark, we analyze across California ZIP codes:
 
-#### Scope
+- Prescriber distribution and specialties
+- Medicare prescription volume
+- Brand vs. generic drug spending
+- Demographic information to estimate the private/commercial insurance market
+- Medicaid prescription utilization for drug demand and spending
+- Pharmacy competition
 
-California specific, 2024 datasets, Brand name and generics only. 
+We aim to identify the factors that influence pharmacy business growth and reduce uncertainty in location selection by making large-scale healthcare market information accessible to independent pharmacy owners. This project is also intended as a foundation for future modeling to support pharmacy location and expansion decisions.
 
-* Brand (Bx) vs Generics (Gx) spending comparison   
-* Prescription Volume   
-* Prescriber counts and specialties   
-* Medicare Part D   
-* Medicaid Estimates   
-* Commercial Estimates   
-* Pharmacy counts   
-* ZIP level 
+### Scope
 
-#### Contributors 
+California only, 2024 datasets, brand-name and generic drugs only.
 
-**USF MS DSAI Cohort 15**  
-Mary Kim   
-Narayan Poudel  
-Jonah Robinson  
-Hersh Rudrawal  
-Thomas Sasser 
+- Brand (Bx) vs. generic (Gx) spending comparison
+- Prescription volume
+- Prescriber counts and specialties
+- Medicare Part D
+- Medicaid estimates
+- Commercial estimates
+- Pharmacy counts
+- ZIP-level analysis
 
-### **Objectives**
+### Contributors
 
-#### Analysis goals 
+**USF MS DSAI Cohort 15**
 
-1) Analysis question : What does the brand-name (Bx) versus generic (Gx) spending distribution look like by California ZIP code?   
-   Business purpose : To understand medication mix. High generics attracts a better contract from distributors.    
-   Output : Bx/Gx dollars and ratio  
-2) Analysis question : What does the average annual and monthly prescription volumes look like by ZIP code?  
-   Business purpose : Estimate prescription demand.  
-   Output : Rx scripts, monthly averages, annual average.  
-3) Analysis question : How many prescribers are in each ZIP code? What are their specialties?   
-   Business purpose : Identify potential prescriber relationship opportunities.  
-   Output : Prescriber counts with specialty distribution.   
-4) Analysis question : What is the estimated annual prescription spending for Medicare, Medicaid, and commercial insurance per ZIP code?  
-   Business purpose : Estimate payer mix in the local market.   
-   Output : Spending comparison (MedD, Medi-Cal, Commercial)  
-5) Analysis question : How many licensed with active status pharmacies are in each ZIP code?   
-   Business purpose : Assess local competition.  
-   Output : Current active licensed pharmacy counts.   
-6) What is the ratio of prescribers to pharmacies per CA Zip code?  
-   Business purpose : Understand market opportunity  
-   Output : Rxers to pharmacy ratio. 
+- Mary Kim
+- Narayan Poudel
+- Jonah Robinson
+- Hersh Rudrawal
+- Thomas Sasser
 
+---
 
-### **Data** 
+## Objectives
 
-### **Pipeline Strategy**
+### Analysis goals
 
-#### 
+| RQ | Analysis question | Business purpose | Output |
+| :---: | :--- | :--- | :--- |
+| 1 | What does the brand-name (Bx) vs. generic (Gx) spending distribution look like by California ZIP code? | Understand medication mix; a high generic share attracts better distributor contracts | Bx/Gx dollars and ratio |
+| 2 | What do average annual and monthly prescription volumes look like by ZIP code? | Estimate prescription demand | Rx scripts, monthly average, annual average |
+| 3 | How many prescribers are in each ZIP code, and what are their specialties? | Identify potential prescriber relationship opportunities | Prescriber counts with specialty distribution |
+| 4 | What is the estimated annual prescription spending for Medicare, Medicaid, and commercial insurance per ZIP code? | Estimate payer mix in the local market | Spending comparison (Med D, Medi-Cal, Commercial) |
+| 5 | How many actively licensed pharmacies are in each ZIP code? | Assess local competition | Current active licensed pharmacy counts |
+| 6 | What is the ratio of prescribers to pharmacies per California ZIP code? | Understand market opportunity | Prescriber-to-pharmacy ratio |
 
-#### **DataSets** 
+---
 
-Requirements : At least one dataset must be \>= 2GB and/or \>= 1M records. 
+## Data and Pipeline Strategy
 
-| Dataset  | Name and link | Method | Requirements | Analysis question |
-| :---- | :---- | :---- | :---- | :---- |
-| 1 | CMS NPPES [NPPES Data Dissemination V.2 (November 02, 2026\)](https://download.cms.gov/nppes/NPPES_Data_Dissemination_November_2026_V2.zip) Use npidata\_pfile\_\*.csv | CSV/ZIP (pyspark) | Yes | 3, 6 |
-| 2 | NUCC Healthcare Provider Taxonomy [Version 26.1 7/1/26](https://nucc.org/images/stories/CSV/nucc_taxonomy_261.csv) | CSV Download | No | 2, 3 |
-| 3 | Medicare Part D Prescriber \- by provider  2024 API  [https\://data.cms.gov/data-api/v1/dataset/14d8e8a9-7e9b-4370-a044-bf97c46b4b44/data](https://data.cms.gov/data-api/v1/dataset/14d8e8a9-7e9b-4370-a044-bf97c46b4b44/data) Link [https\://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-provider](https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-provider) | CSV | Yes | 1, 2, 4 |
-| 4 | California DCA Pharmacy License [https\://www\.dca.ca.gov/consumers/public\_info/index.html](https://www.dca.ca.gov/consumers/public_info/index.html) | CSV or XLSX | No | 5, 6 |
-| 5 | CMS SDUD 2024 API ​/api​/1​/metastore​/schemas​/dataset​/items​/61729e5a-7aa8-448c-8903-ba3e0cd0ea3c link [https\://data.medicaid.gov/dataset/61729e5a-7aa8-448c-8903-ba3e0cd0ea3c?](https://data.medicaid.gov/dataset/61729e5a-7aa8-448c-8903-ba3e0cd0ea3c?)  | CSV | Yes | 4 |
-| 6 | Medicaid Drug Rebate Program 2024 API ​/api​/1​/metastore​/schemas​/dataset​/items​/0ad65fe5-3ad3-5d79-a3f9-7893ded7963a link  [https\://data.medicaid.gov/dataset/0ad65fe5-3ad3-5d79-a3f9-7893ded7963a?](https://data.medicaid.gov/dataset/0ad65fe5-3ad3-5d79-a3f9-7893ded7963a?)  | CSV | Yes | 1, 4 |
-| 7 | DHCS Medi-Cal Eligible Counts Link [https\://publish.data.ca.gov/dataset/medi-cal-certified-eligible-counts-by-month-of-eligibility-zip-code-and-sex/resource/791a9aeb-3a9e-4b90-b249-e7e2ad3768f6](https://publish.data.ca.gov/dataset/medi-cal-certified-eligible-counts-by-month-of-eligibility-zip-code-and-sex/resource/791a9aeb-3a9e-4b90-b249-e7e2ad3768f6) Link to CSV [https\://s3.amazonaws.com/og-production-open-data-chelseama-892364687672/resources/55391885-76d4-4fa1-9af8-74844386fc48/oct2026\_productionsecondsheet\_2020\_recent.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Credential=AKIAJJIENTAPKHZMIPXQ%2F20261104%2Fus-east-1%2Fs3%2Faws4\_request\&X-Amz-Date=20261104T063256Z\&X-Amz-Expires=86400\&X-Amz-SignedHeaders=host\&X-Amz-Signature=7af9d22f2c2cab30054ba1bb92137c50ff74c317092e40529ef7129001beba08](https://s3.amazonaws.com/og-production-open-data-chelseama-892364687672/resources/55391885-76d4-4fa1-9af8-74844386fc48/oct2026_productionsecondsheet_2020_recent.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJIENTAPKHZMIPXQ%2F20261104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261104T063256Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7af9d22f2c2cab30054ba1bb92137c50ff74c317092e40529ef7129001beba08)  | CSV | Verify | 4 |
-| 8 | U.S Census ACS 2024 link  [https\://www\.census.gov/data/developers/data-sets/acs-5year.html?](https://www.census.gov/data/developers/data-sets/acs-5year.html?) | CSV | Verify | 4 |
-| 9 | CA DMHC Prescription Drug Transparency Report 2024 Link  [https\://www\.dmhc.ca.gov/Portals/0/Docs/DO/SB172024Report.pdf?](https://www.dmhc.ca.gov/Portals/0/Docs/DO/SB172024Report.pdf?utm_source=chatgpt.com) | PDF  | Verify | 4 |
+### Datasets
 
+**Requirement:** at least one dataset must be ≥ 2 GB and/or ≥ 1M records.
 
-#### 
+| # | Dataset | Link | Format | Meets size req. | RQ |
+| :---: | :--- | :--- | :--- | :---: | :---: |
+| D1 | CMS NPPES Data Dissemination V.2 (Nov 2, 2026) — use `npidata_pfile_*.csv` | [Download (ZIP)](https://download.cms.gov/nppes/NPPES_Data_Dissemination_November_2026_V2.zip) | CSV/ZIP (PySpark) | Yes | 3, 6 |
+| D2 | NUCC Healthcare Provider Taxonomy, Version 26.1 (7/1/26) | [CSV](https://nucc.org/images/stories/CSV/nucc_taxonomy_261.csv) | CSV | No | 2, 3 |
+| D3 | Medicare Part D Prescribers — by Provider, 2024 | [API](https://data.cms.gov/data-api/v1/dataset/14d8e8a9-7e9b-4370-a044-bf97c46b4b44/data) · [Dataset page](https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-provider) | CSV | Yes | 1, 2, 4 |
+| D4 | California DCA Pharmacy License | [DCA public info](https://www.dca.ca.gov/consumers/public_info/index.html) | CSV or XLSX | No | 5, 6 |
+| D5 | CMS State Drug Utilization Data (SDUD) 2024 — API: `/api/1/metastore/schemas/dataset/items/61729e5a-7aa8-448c-8903-ba3e0cd0ea3c` | [Dataset page](https://data.medicaid.gov/dataset/61729e5a-7aa8-448c-8903-ba3e0cd0ea3c) | CSV | Yes | 4 |
+| D6 | Medicaid Drug Rebate Program 2024 — API: `/api/1/metastore/schemas/dataset/items/0ad65fe5-3ad3-5d79-a3f9-7893ded7963a` | [Dataset page](https://data.medicaid.gov/dataset/0ad65fe5-3ad3-5d79-a3f9-7893ded7963a) | CSV | Yes | 1, 4 |
+| D7 | DHCS Medi-Cal Certified Eligible Counts by Month, ZIP Code, and Sex | [Dataset page](https://publish.data.ca.gov/dataset/medi-cal-certified-eligible-counts-by-month-of-eligibility-zip-code-and-sex/resource/791a9aeb-3a9e-4b90-b249-e7e2ad3768f6) | CSV | Verify | 4 |
+| D8 | U.S. Census ACS 5-Year 2024 | [Census API](https://www.census.gov/data/developers/data-sets/acs-5year.html) | CSV | Verify | 4 |
+| D9 | CA DMHC Prescription Drug Cost Transparency Report 2024 | [PDF](https://www.dmhc.ca.gov/Portals/0/Docs/DO/SB172024Report.pdf) | PDF | Verify | 4 |
 
-#### **Columns to extract and cleaning** 
+### Columns to extract and cleaning
 
-| Dataset  | Name and link | Columns  | Expected\_output |
-| :---- | :---- | :---- | :---- |
-| 1 | CMS NPPES [NPPES Data Dissemination V.2 (November 02, 2026\)](https://download.cms.gov/nppes/NPPES_Data_Dissemination_November_2026_V2.zip) Use npidata\_pfile\_\*.csv | NPI,  Entity\_type,  practice-location state/ZIP, Taxonomy code 1-15, Primary Taxonomy switched 1-15,  Enumeration, Deactivation/reactivation dates  | dim\_prescriber  |
-| Filter CA for unique individual NPI \- no duplicate  Extract ZIP5 Select primary taxonomy |  |  |  |
-| 2 | NUCC Healthcare Provider Taxonomy [Version 26.1 7/1/26](https://nucc.org/images/stories/CSV/nucc_taxonomy_261.csv) | Code,  Grouping,  Classification,  Specialization,  Display name  | dim\_taxonomy |
-| Select 2024 version \- if not, use the most current  Extract unique taxonomy codes.  |  |  |  |
-| 3 | Medicare Part D Prescriber \- by provider  2024 API  [https\://data.cms.gov/data-api/v1/dataset/14d8e8a9-7e9b-4370-a044-bf97c46b4b44/data](https://data.cms.gov/data-api/v1/dataset/14d8e8a9-7e9b-4370-a044-bf97c46b4b44/data) Link [https\://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-provider](https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-provider) | Prscrb\_NPI, Prscrbr\_State\_Abrvtn, Prscrbr\_Zip5,  Prscrbr\_Type, Prscrbr\_Ent\_Cd, Tot\_Clms, Tot\_30day\_Fills, Tot\_Drug\_Cst, Brnd\_Tot\_Drug\_Cst, Gnrc\_Tot\_Drug\_Cst | fact\_partd\_provider |
-| 2024 Filter CA  Normalize NPI and ZIP  Cast cost  Cast claims  |  |  |  |
-| 4 | California DCA Pharmacy License [https\://www\.dca.ca.gov/consumers/public\_info/index.html](https://www.dca.ca.gov/consumers/public_info/index.html) | License\_type,  License\_number, Pharmacy\_name,  Organization\_type,  Physical\_address,  City, State, ZIP, License\_status, Original\_issue, Expiration\_dates,  | dim\_pharmacy |
-| Filter CA Filter active \- license status  Remove pharmacies who have expired license.  Remove individual pharmacists/techs. Make sure to look at PHY  Remove duplicates |  |  |  |
-| 5 | CMS SDUD 2024 API ​/api​/1​/metastore​/schemas​/dataset​/items​/61729e5a-7aa8-448c-8903-ba3e0cd0ea3c link [https\://data.medicaid.gov/dataset/61729e5a-7aa8-448c-8903-ba3e0cd0ea3c?](https://data.medicaid.gov/dataset/61729e5a-7aa8-448c-8903-ba3e0cd0ea3c?)  | State, Year, Quarter, Ndc, Utilization\_type,  Number\_of\_prescriptions, Total\_amount\_reimbursed,  Medicaid\_amount\_reimbursed,  Non-medicaid\_amount\_reimbursed, suppression\_used  | fact\_sdud\_ca\_2024 |
-| Filter CA  2024 Separate FFS (fee-for-service meaning straight state medicaid)/MCO (managed care organization meaning private insurance handling state medicaid) Keep suppressed records |  |  |  |
-| 6 | Medicaid Drug Rebate Program 2024 API ​/api​/1​/metastore​/schemas​/dataset​/items​/0ad65fe5-3ad3-5d79-a3f9-7893ded7963a link  [https\://data.medicaid.gov/dataset/0ad65fe5-3ad3-5d79-a3f9-7893ded7963a?](https://data.medicaid.gov/dataset/0ad65fe5-3ad3-5d79-a3f9-7893ded7963a?)  | Year, Quarter, NDC,  Drug\_Category,  Drug\_Type\_Indicator,  FDA\_Product\_Name | dim\_medicaid\_drug |
-| 2024 Rx product Normalize NDC11 Keep quarterly drug category  |  |  |  |
-| 7 | DHCS Medi-Cal Eligible Counts Link [https\://publish.data.ca.gov/dataset/medi-cal-certified-eligible-counts-by-month-of-eligibility-zip-code-and-sex/resource/791a9aeb-3a9e-4b90-b249-e7e2ad3768f6](https://publish.data.ca.gov/dataset/medi-cal-certified-eligible-counts-by-month-of-eligibility-zip-code-and-sex/resource/791a9aeb-3a9e-4b90-b249-e7e2ad3768f6) Link to CSV [https\://s3.amazonaws.com/og-production-open-data-chelseama-892364687672/resources/55391885-76d4-4fa1-9af8-74844386fc48/oct2026\_productionsecondsheet\_2020\_recent.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Credential=AKIAJJIENTAPKHZMIPXQ%2F20261104%2Fus-east-1%2Fs3%2Faws4\_request\&X-Amz-Date=20261104T063256Z\&X-Amz-Expires=86400\&X-Amz-SignedHeaders=host\&X-Amz-Signature=7af9d22f2c2cab30054ba1bb92137c50ff74c317092e40529ef7129001beba08](https://s3.amazonaws.com/og-production-open-data-chelseama-892364687672/resources/55391885-76d4-4fa1-9af8-74844386fc48/oct2026_productionsecondsheet_2020_recent.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJIENTAPKHZMIPXQ%2F20261104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261104T063256Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7af9d22f2c2cab30054ba1bb92137c50ff74c317092e40529ef7129001beba08)  | ZIP, eligibility\_year,  Eligibility\_month,  Sex,  eligible\_count  | agg\_zip\_medical\_eligibility  |
-| Filter 2024 Aggregate sex categories and by ZIP, month |  |  |  |
-| 8 | U.S Census ACS 2024 link  [https\://www\.census.gov/data/developers/data-sets/acs-5year.html?](https://www.census.gov/data/developers/data-sets/acs-5year.html?) | ZCTA5,  Total\_population, Population\_aged\_18\_64, privately\_insured\_population\_by\_age | dim\_zip\_demographics |
-| Get 5 years ZCTA estimates Counts private insurance. |  |  |  |
-| 9 | CA DMHC Prescription Drug Transparency Report 2024 Link  [https\://www\.dmhc.ca.gov/Portals/0/Docs/DO/SB172024Report.pdf?](https://www.dmhc.ca.gov/Portals/0/Docs/DO/SB172024Report.pdf?utm_source=chatgpt.com) | 2024 reported drug\_spending,  covered-plan/member definitions, permember spending  | Commercial\_benchmark |
-| Get reported drug spending  Get covered population |  |  |  |
+| # | Dataset | Columns | Cleaning | Output table |
+| :---: | :--- | :--- | :--- | :--- |
+| D1 | CMS NPPES | NPI, Entity_type, practice-location state/ZIP, Taxonomy code 1–15, Primary taxonomy switch 1–15, Enumeration date, Deactivation/reactivation dates | Filter CA; unique individual NPIs (no duplicates); extract ZIP5; select primary taxonomy | `dim_prescriber` |
+| D2 | NUCC Taxonomy | Code, Grouping, Classification, Specialization, Display name | Use 2024 version (otherwise most current); extract unique taxonomy codes | `dim_taxonomy` |
+| D3 | Medicare Part D by Provider | `Prscrbr_NPI`, `Prscrbr_State_Abrvtn`, `Prscrbr_Zip5`, `Prscrbr_Type`, `Prscrbr_Ent_Cd`, `Tot_Clms`, `Tot_30day_Fills`, `Tot_Drug_Cst`, `Brnd_Tot_Drug_Cst`, `Gnrc_Tot_Drug_Cst` | 2024; filter CA; normalize NPI and ZIP; cast cost and claims columns | `fact_partd_provider` |
+| D4 | CA DCA Pharmacy License | License_type, License_number, Pharmacy_name, Organization_type, Physical_address, City, State, ZIP, License_status, Original_issue_date, Expiration_date | Filter CA; keep active license status; remove expired licenses; remove individual pharmacists/techs (check PHY type); remove duplicates | `dim_pharmacy` |
+| D5 | CMS SDUD 2024 | State, Year, Quarter, NDC, Utilization_type, Number_of_prescriptions, Total_amount_reimbursed, Medicaid_amount_reimbursed, Non-Medicaid_amount_reimbursed, Suppression_used | Filter CA, 2024; separate FFS (fee-for-service, paid directly by state Medicaid) from MCO (managed care organizations administering Medicaid); keep suppressed records | `fact_sdud_ca_2024` |
+| D6 | Medicaid Drug Rebate Program | Year, Quarter, NDC, Drug_Category, Drug_Type_Indicator, FDA_Product_Name | 2024 Rx products; normalize to NDC11; keep quarterly drug category | `dim_medicaid_drug` |
+| D7 | DHCS Medi-Cal Eligible Counts | ZIP, Eligibility_year, Eligibility_month, Sex, Eligible_count | Filter 2024; aggregate across sex by ZIP and month | `agg_zip_medical_eligibility` |
+| D8 | U.S. Census ACS 2024 | ZCTA5, Total_population, Population_aged_18_64, Privately_insured_population_by_age | Use 5-year ZCTA estimates; count privately insured population | `dim_zip_demographics` |
+| D9 | CA DMHC Report 2024 | 2024 reported drug spending, covered plan/member definitions, per-member spending | Extract reported drug spending and covered population | `commercial_benchmark` |
 
-#### 
+### Join plan and PySpark operations
 
-#### 
+| RQ | Join plan | Calculation | PySpark operations |
+| :---: | :--- | :--- | :--- |
+| `rq1` — Bx vs. Gx spending per ZIP | D3 only (no join); filter CA; group by ZIP | Brand % = Σ brand cost / Σ total drug cost × 100<br>Generic % = Σ generic cost / Σ total drug cost × 100 | `filter()`, `map()`, `reduceByKey()`, `mapValues()` |
+| `rq2` — Annual & monthly Rx volume | D1 ⟕ D2 on `primary_taxonomy_code = taxonomy_code` (M:1); D3 ⟕ on NPI (1:1) | Annual Rx = Σ total claims<br>Monthly Rx = annual Rx / 12<br>Avg = annual Rx / unique Part D NPIs | `map()`, `join()`, `reduceByKey()`, `mapValues()` |
+| `rq3` — Prescriber counts and specialties | D1 ⟕ D2 on `primary_taxonomy_code = taxonomy_code` (M:1) | Prescribers = count(distinct NPI)<br>Prescriber share = prescribers in ZIP / total CA prescribers × 100 | `filter()`, `map()`, `distinct()`, `leftOuterJoin()`, `reduceByKey()` |
+| `rq4` — Medicare, Medicaid, and commercial Rx spending | D3: Medicare spending by prescriber ZIP<br>D5 + D7: estimated Medicaid spending by ZIP (1:M)<br>D8 + D9: estimated commercial spending by ZIP (1:M) | Statewide totals allocated to ZIPs by eligibility / insured-population weights | `filter()`, `map()`, `reduceByKey()`, `mapValues()`, `join()`, `leftOuterJoin()` |
+| `rq5` — Active pharmacies | D4: CA DCA licensing | Count of distinct active licenses by ZIP | `filter()`, `map()`, `reduceByKey()`, `distinct()` |
+| `rq6` — Prescriber-to-pharmacy ratio | Aggregated D1 + aggregated D4, joined on ZIP5 (1:1) | Ratio = prescribers / pharmacies | `map()`, `fullOuterJoin()`, `mapValues()` |
 
-#### 
+The data schema with examples for each data source is in the accompanying spreadsheet; row and column counts are listed at the top left of each tab.
 
-#### **Join plan and PySpark operations**
+---
 
-| Research question  (Please use variable name such as rq1, rq2 etc. )  | Join plan  | PySpark operation |
-| :---- | :---- | :---- |
-| 1 : Brand vs Generics Drug Spending per ZIP Filter CA  Group by ZIP | D3 (No join needed) Calculation Brand % \= summation of brand cost / summation of total drug cost \* 100  Generics % \= summation of generics cost / summation of total drug cost \* 100 | filter() map() reduceByKey() mapValues() |
-| 2 : Annual & monthly rx volume.  | D1 left join D2  primary\_taxonomy\_code \= taxonomy\_code  M : 1  D3 left join  on NPI  1:1 Calculation  Annual Rx \= summation of total claims  Monthly Rx \= annual rx / 12 Avg \= annual Rx / unique part D NPIs.  | map() join() reduceByKey() mapValues()  |
-| 3 : Prescriber counts and specialties  | D1 left join D2 Primary\_taxonomy\_code \= taxonomy\_code M:1 Calculation  Prescribers \= count(unique NPI) Prescriber Share \= Prescribers in ZIP / Total CA Prescriber counts \* 100  | filter() map() distinct() leftOuterJoin() reduceByKey()  |
-| 4 : Medicare, Medicaid and commercial prescription spending  | D3 : Medicare spending by prescriber ZIP  D5 \+ D7 : Estimated Medicaid Spending by ZIP 1:M D8 \+ D9 : Estimated Commercial Spending by ZIP 1:M  | filter() map() reduceByKey() mapValues() join() leftOuterJoin()  |
-| 5 : Number of active pharmacies  | D4 : CA DCA licensing   | filter() map() reduceByKey() distinct() |
-| 6 : Prescriber to pharmacy ratio | Aggregated D1 \+ aggregated D4  Join on ZIP5 1:1  Ratio \= prescribers / pharmacies    | map() fullOuterJoin() mapValues() |
+## Team Plan
 
+**Meetings** (in person at 101 Howard):
 
-Here is the data schema with examples for each of the eight data sources we are including in this project.  Note that rows and columns are listed on the top left of each spreadsheet tab.
+- Monday & Thursday, 12–1 pm
+- Friday, 2–3 pm
 
+| Member | Research questions | Initials and dates |
+| :--- | :--- | :--- |
+| Mary Kim | Q4 (Medicaid, Medicare) | |
+| Jonah Robinson | Q1, Q5 | |
+| Thomas Sasser | Q4 (Medicare, Commercial) | |
+| Hersh Rudrawal | Q2, Q6 | |
+| Narayan Poudel | Q3, Q6 | |
 
+---
 
-### **Team Plan** 
+## Team Schedule
 
-Meetings :  Monday & Thursday : 12-1 in person at 101 Howard.  
-Friday : 2-3pm in person at 101 Howard. 
-
-|  | Member |  | Research Question |  | Initials and Dates |
-| ----- | ----- | :---- | :---- | :---- | :---- |
-|  |  |  |  |  |  |
-|  | Mary Kim  |  | Q4 (Medicaid, Medicare) |  |  |
-|  | Jonah Robinson |   | Q1 , Q5 |  |  |
-|  | Thomas Sasser |  | Q4 (Medicare, Commercial) |  |  |
-|  | Hersh Rudrawal |  | Q2 , Q6 |  |  |
-|  | Narayan Poudel |  | Q3 , Q6 |  |   |
-
-
-# Team Schedule
-
-## Mary Kim
+### Mary Kim
 
 | Week | Tasks | Deliverables |
 | :--- | :--- | :--- |
@@ -170,7 +151,7 @@ Friday : 2-3pm in person at 101 Howard.
 | 12/8 – 12/14 | Write methodology on calculation, suppression strategy, and eligibility allocation | Report write-up |
 | 12/15 – 12/16 | Rerun results; finalize methodology and limitations | Final Medicaid RQ4 |
 
-## Thomas Sasser
+### Thomas Sasser
 
 | Week | Tasks | Deliverables |
 | :--- | :--- | :--- |
@@ -182,7 +163,7 @@ Friday : 2-3pm in person at 101 Howard.
 | 12/8 – 12/14 | Validate commercial methodology with Mary; compile report | Report draft |
 | 12/15 – 12/16 | Repo check and report submission | Final report and QA |
 
-## Jonah Robinson
+### Jonah Robinson
 
 | Week | Tasks | Deliverables |
 | :--- | :--- | :--- |
@@ -194,7 +175,7 @@ Friday : 2-3pm in person at 101 Howard.
 | 12/8 – 12/14 | Compare Bx/Gx drug costs against Part D totals; double-check active pharmacy counts and license filters | RQ1, RQ5 report findings |
 | 12/15 – 12/16 | Finalize Bx/Gx spending, Medicare spending, and active pharmacies | RQ1, RQ5, and Med D for RQ4 files |
 
-## Hersh Rudrawal
+### Hersh Rudrawal
 
 | Week | Tasks | Deliverables |
 | :--- | :--- | :--- |
@@ -206,7 +187,7 @@ Friday : 2-3pm in person at 101 Howard.
 | 12/8 – 12/14 | Reconcile total annual claims + fills; check RQ6 zero-pharmacy ZIPs and joins | RQ2, RQ6 validation and report |
 | 12/15 – 12/16 | Calculator for Rx volumes and prescriber-to-pharmacy ratio | Final RQ2, RQ6 files |
 
-## Narayan Poudel
+### Narayan Poudel
 
 | Week | Tasks | Deliverables |
 | :--- | :--- | :--- |
