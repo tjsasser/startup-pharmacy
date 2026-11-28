@@ -588,9 +588,7 @@ RQ4: Medicaid Prescription Spending estimation by CA ZIP code
 1. mary_d5_sdud.ipynb: Clean 2024 California Medicaid Prescription Reimbursement data. Save processed data to GCS bucket.
 2. mary_d6_mdrp.ipynb: Placeholder for MDRP analysis. Currently not used in RQ4.
 3. mary_r7_dhcs.ipynb: Clean 2024 Medi-Cal eligibility by ZIP code in CA. Save processed data to GCP bucket.
-4. mary_rq4_analysis.ipynb: Load cleaned D%, D7 data to calculate the estimate of Medicaid Prescription Spending by CA ZIP code.
-
-Analysis in process.
+4. mary_rq4_analysis.ipynb: Load cleaned D%, D7 data to calculate the estimate of Medicaid Prescription Spending by CA ZIP code.  Analysis in process.
 
 
 ## Execution
