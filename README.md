@@ -578,20 +578,25 @@ Example rows:
 └── requirements.txt
 ```
 
-## Notes on the notebooks
 
-Notebooks run independently.  Run them in any order.
+## Description of Scripts for this version
 
-### RQ4 : Estimation on medicaid prescription spending by CA Zip code.
+RQ4: Medicaid Prescription Spending estimation by CA ZIP code
+
+### Notebook Descriptions
+
+1. mary_d5_sdud.ipynb: Clean 2024 California Medicaid Prescription Reimbursement data. Save processed data to GCS bucket.
+2. mary_d6_mdrp.ipynb: Placeholder for MDRP analysis. Currently not used in RQ4.
+3. mary_r7_dhcs.ipynb: Clean 2024 Medi-Cal eligibility by ZIP code in CA. Save processed data to GCP bucket.
+4. mary_rq4_analysis.ipynb: Load cleaned D%, D7 data to calculate the estimate of Medicaid Prescription Spending by CA ZIP code.  Analysis in process.
 
 
-```text
-Methodology = CA statewide medicaid reimbursement form SDUD
+## Execution
 
-Get Medi-cal eligible patients by CA zip code from DHCS
+The user can run mary_d5_sdud.ipynb and mary_r7_dhcs.ipynb in any order.
+However, they must be run before mary_rq4_analysis.ipynb.
 
-Calculate share of zip eligible population / total CA population
-share * statewide medicaid spending.
+1. mary_d5_sdud.ipynb
+2. mary_r7_dhcs.ipynb
+3. mary_rq4_analysis.ipynb
 
-Keeping the suppressed data since they are not $0.
-```
